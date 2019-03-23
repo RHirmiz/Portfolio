@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Contact Me</title>
+<meta charset="utf-8">
+<meta name='description' content='This page features my resume'>
+<meta name='keywords' content='home, resume, work experience, education, skills'>
+<meta name='author' content='RyanHirmiz@Hotmail.ca'>
+
+<link rel = "stylesheet" type = "text/css" href="css/webDevelopmentAssignment1.css"/>
+
+</style>
+
+</head>
+<body>
+    <p align="center"><img src="../../../images/ryans_logo.png" width="300" height="100"/></p>
+        		<nav id="mainMenu" align="center">
+			<br/>
+				<ul>
+                    <a href="index.html"><button type="button" class="btn btn-outline-secondary">Home</button></a>
+                    <a href="ryans_video_gallery.html"><button type="button" class="btn btn-secondary">Ryan's Video Gallery</button></a>
+                   <a href="ryans_photo_gallery.html"><button type="button" class="btn btn-secondary">Ryan's Photo Gallery</button></a>
+                   <a href="the_perfect_dream_vacation.html"><button type="button" class="btn btn-secondary">The Perfect Dream Vacation</button></a>
+                   
+                    <a href="contact.html"><button type="button" class="btn btn-secondary">Contact Me</button></a>
+                </ul>
+        </nav>
+
+
+
+<div id="container"> 
+   <h1 align="center">Contact</h1>
+
+<h2 align="center">You can contact me at anytime either in person or by phone, and the map below shows where I'm located.</h1>
+
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(43.683334, -79.766670), 
+    zoom: 10
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+<br>
+<br>
+
+</div>
+
+<div id="footer" align="center">
+		<nav id="mainMenu" align="center">
+			<br/>
+				<ul>
+                    <a href="index.html"><button type="button" class="btn btn-outline-secondary">Home</button></a>
+                    <a href="ryans_video_gallery.html"><button type="button" class="btn btn-secondary">Ryan's Video Gallery</button></a>
+                   <a href="ryans_photo_gallery.html"><button type="button" class="btn btn-secondary">Ryan's Photo Gallery</button></a>
+                   <a href="the_perfect_dream_vacation.html"><button type="button" class="btn btn-secondary">The Perfect Dream Vacation</button></a>
+                   
+                    <a href="contact.html"><button type="button" class="btn btn-secondary">Contact Me</button></a>
+                </ul>
+        </nav>
+
+    <b><a href="https://www.facebook.com/ryan.hirmiz">Facebook | </a></b>
+    <b><a href="https://www.twitter.com/RyanHirmiz">Twitter | <a></b>
+    <b><a href="https://www.linkedin.com/in/ryan-hirmiz-057b89b0?trk=nav_responsive_tab_profile">LinkedIn</a></b>
+			
+	<p align="center">&copy; All Rights belong to Ryan Hirmiz</p>
+</div>
+</body>
+</html>

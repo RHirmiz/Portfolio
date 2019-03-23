@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>The Perfect Dream Vacation</title>
+<meta charset="utf-8">
+<meta name='description' content='This page features my resume'>
+<meta name='keywords' content='home, resume, work experience, education, skills'>
+<meta name='author' content='RyanHirmiz@Hotmail.ca'>
+
+<link rel = "stylesheet" type = "text/css" href="css/webDevelopmentAssignment1.css"/>
+</head>
+<body>
+    <p align="center"><img src="../../../images/ryans_logo.png" width="300" height="100"/></p>
+
+    <h1 align="center">The Perfect Dream Vacation</h1>
+        		<nav id="mainMenu" align="center">
+			<br/>
+				<ul>
+                    <a href="index.html"><button type="button" class="btn btn-outline-secondary">Home</button></a>
+                    <a href="ryans_video_gallery.html"><button type="button" class="btn btn-secondary">Ryan's Video Gallery</button></a>
+                   <a href="ryans_photo_gallery.html"><button type="button" class="btn btn-secondary">Ryan's Photo Gallery</button></a>
+                   <a href="the_perfect_dream_vacation.html"><button type="button" class="btn btn-secondary">The Perfect Dream Vacation</button></a>
+                   
+                    <a href="contact.html"><button type="button" class="btn btn-secondary">Contact Me</button></a>
+                </ul>
+        </nav>
+
+
+
+<div id="container">
+
+<h1 align="center">The Perfect Dream Vacation: Dubai</h1>
+    <div class="mySlides fade">
+      <img src="images/dubai1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/dubai2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/dubai3.jpg" style="width:100%">
+    </div>
+     <div class="mySlides fade">
+      <img src="images/dubai4.jpg" style="width:100%">
+    </div>
+	<div class="mySlides fade">
+      <img src="images/dubai5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/dubai6.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/dubai7.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/dubai8.jpg" style="width:100%">
+    </div>
+     <div class="mySlides fade">
+      <img src="images/dubai9.jpg" style="width:100%">
+    </div>
+	<div class="mySlides fade">
+      <img src="images/dubai10.jpg" style="width:100%">
+    </div>  
+    
+<br>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+	  <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+	  <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+	  <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+<div id="footer" align="center">
+        		<nav id="mainMenu" align="center">
+			<br/>
+				<ul>
+                    <a href="index.html"><button type="button" class="btn btn-outline-secondary">Home</button></a>
+                    <a href="ryans_video_gallery.html"><button type="button" class="btn btn-secondary">Ryan's Video Gallery</button></a>
+                   <a href="ryans_photo_gallery.html"><button type="button" class="btn btn-secondary">Ryan's Photo Gallery</button></a>
+                   <a href="the_perfect_dream_vacation.html"><button type="button" class="btn btn-secondary">The Perfect Dream Vacation</button></a>
+                   
+                    <a href="contact.html"><button type="button" class="btn btn-secondary">Contact Me</button></a>
+                </ul>
+        </nav>
+
+    <b><a href="https://www.facebook.com/ryan.hirmiz">Facebook | </a></b>
+    <b><a href="https://www.twitter.com/RyanHirmiz">Twitter | <a></b>
+    <b><a href="https://www.linkedin.com/in/ryan-hirmiz-057b89b0?trk=nav_responsive_tab_profile">LinkedIn</a></b>
+			
+	<p align="center">&copy; All Rights belong to Ryan Hirmiz</p>
+</div>
+</body>
+</html>
